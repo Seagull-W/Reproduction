@@ -1,0 +1,7 @@
+# Optional GPU path; not installed or integration-tested in the authoring environment.
+# Install a CUDA-compatible official PyTorch build first; freeze the resolved full environment.
+trl==0.25.1
+transformers==4.56.2
+datasets>=3.0,<5
+accelerate>=1.4,<2
+torch>=2.6,<3
