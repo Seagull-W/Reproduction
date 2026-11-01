@@ -1,0 +1,3 @@
+{"code":0,"msg":"","data":{"recordId":"105b8b02-8ac5-4360-bc19-1a9a7119efd1","fileName":"smoke-1MiB.bin","fileSize":1048576,"state":"success","createdAt":1793546354122},"action":"upload-list","type":"list"}
+{"code":0,"msg":"","data":{"recordId":"c031967b-2fe4-4d8f-aacb-9be3cd9d033b","fileName":"throughput-64MiB.bin","fileSize":67108864,"state":"pending","createdAt":1793546366124},"action":"upload-list","type":"list"}
+{"code":0,"msg":"成功","data":{"totalCount":2},"action":"upload-list","type":"result"}

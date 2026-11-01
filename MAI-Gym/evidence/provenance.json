@@ -1,0 +1,21 @@
+{
+  "retrieved_on": "2026-11-01",
+  "model_id": "Tongyi-MAI/MAI-Gym-9B",
+  "model_revision_at_inspection": "176656ae6a034a0ebf57e8fa67e73015b6e2d98a",
+  "weight_headers_revision": "176656ae6a034a0ebf57e8fa67e73015b6e2d98a",
+  "config_snapshot_ref": "main at inspection",
+  "gpu_measurement_performed": false,
+  "sources": {
+    "qwen3_5.py": "https://raw.githubusercontent.com/vllm-project/vllm/main/vllm/model_executor/models/qwen3_5.py",
+    "mamba_utils.py": "https://raw.githubusercontent.com/vllm-project/vllm/main/vllm/model_executor/layers/mamba/mamba_utils.py"
+  },
+  "sha256": {
+    "config.json": "c850adfbfa9bc85dc96ae3573913efed945ad3fe7c1b1ae6b76dcdb41f515c84",
+    "mamba_utils.py": "9fddeca9fe0ebdde3ca718d11d31aaba68a09eba8ce2d2ea9c7c922f16f02439",
+    "model.safetensors.index.json": "a3b47bbc8c3f43dd7070bcdcf5082c6f44c9c76365cf244d088dc6511e3c27fe",
+    "processor_config.json": "14932921ca485d458a04dafd8069fbb0a4505622a48208d19ed247115801385b",
+    "qwen3_5.py": "f9f370f7b4988bd917c1dad4a4d6939e74c5fe4f5b7cea9cedfcf4c2a5637afe",
+    "weight_summary.json": "7afcd090a537d72f7180a081c2e75e51ffaacdfb72703ea64f5b2782db78bb9d"
+  },
+  "mai_gym_source_commit": "dc279a3735f0d59f9b9b9806f1fc8cd99c28e6f9"
+}

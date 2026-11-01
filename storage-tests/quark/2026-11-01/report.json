@@ -1,0 +1,510 @@
+{
+  "schema_version": 1,
+  "environment": {
+    "os": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+    "architecture": "x86_64",
+    "python": "3.12.3",
+    "node": "v22.23.3",
+    "cli_version": "1.0.25-876f30d",
+    "account_tier": "NORMAL",
+    "account_capacity_bytes": 10737418240,
+    "test_scope": "Current CPU-only host; not a CompShare region-to-cloud-drive benchmark",
+    "nominal_network_bandwidth": "not measured",
+    "credential_handling": "No auth codes, cookies or configuration contents included in evidence"
+  },
+  "fixtures": [
+    {
+      "name": "smoke-1MiB.bin",
+      "bytes": 1048576,
+      "sha256": "f4b92796c7c8a8cb68dabd6d79fa0b725bf619edfdae480a80e1c9aa90c927e9"
+    },
+    {
+      "name": "throughput-64MiB.bin",
+      "bytes": 67108864,
+      "sha256": "1b0953f06c1f7a704068dc94b60c2298882fe859334755106381ea36a63a898d"
+    },
+    {
+      "name": "resume-1GiB.bin",
+      "bytes": 1073741824,
+      "sha256": "2cd3df9536903284cd4132ee4ac83c9eb8e2dd7f6dce4a6398a9c2c54b0c19ec"
+    },
+    {
+      "name": "resume-8MiB.bin",
+      "bytes": 8388608,
+      "sha256": "118347ce13982a6a81165fe76298d1182ee468199fd2758ab789daea3dc28b7f"
+    }
+  ],
+  "attempts": [
+    {
+      "action": "upload",
+      "name": "smoke-1MiB.bin",
+      "elapsed_s": 4.092,
+      "exit_code": 0,
+      "interrupted": false,
+      "timed_out": false,
+      "log_path": "1793546353963466139-upload.jsonl",
+      "results": [
+        {
+          "code": 0,
+          "msg": "成功",
+          "data": {
+            "fileNames": [
+              "smoke-1MiB.bin"
+            ],
+            "fileCount": 1,
+            "totalSize": 1048576,
+            "fids": [
+              "cff5cecc868942de87df329f6448389d"
+            ],
+            "successCount": 1,
+            "instantUpload": false,
+            "instantUploadCount": 0,
+            "fullPath": "夸克网盘/来自：Codex",
+            "heapUsed": 10832752,
+            "rss": 80338944
+          },
+          "action": "upload",
+          "type": "result"
+        }
+      ],
+      "items": [
+        {
+          "code": 0,
+          "msg": "上传成功",
+          "data": {
+            "recordId": "105b8b02-8ac5-4360-bc19-1a9a7119efd1",
+            "fileId": "cff5cecc868942de87df329f6448389d",
+            "fileName": "smoke-1MiB.bin",
+            "fileSize": 1048576,
+            "instantUpload": false
+          },
+          "action": "upload",
+          "type": "list"
+        }
+      ],
+      "source_bytes": 1048576,
+      "progress_observations": {
+        "count": 16,
+        "first_bytes": 65536,
+        "max_bytes": 1048576,
+        "last_bytes": 1048576,
+        "backward_jumps": 0
+      },
+      "completed_successfully": true
+    },
+    {
+      "action": "download",
+      "name": "smoke-1MiB.bin",
+      "elapsed_s": 1.571,
+      "exit_code": 0,
+      "interrupted": false,
+      "timed_out": false,
+      "log_path": "1793546360769619002-download.jsonl",
+      "results": [
+        {
+          "code": 0,
+          "msg": "成功",
+          "data": {
+            "fileName": "smoke-1MiB.bin",
+            "filePath": "/tmp/quark-storage-test/20261101T110722Z/downloads/smoke-1MiB.bin/smoke-1MiB.bin"
+          },
+          "action": "download",
+          "type": "result"
+        }
+      ],
+      "items": [],
+      "download_checks": [
+        {
+          "path": "/tmp/quark-storage-test/20261101T110722Z/downloads/smoke-1MiB.bin/smoke-1MiB.bin",
+          "bytes": 1048576,
+          "sha256": "f4b92796c7c8a8cb68dabd6d79fa0b725bf619edfdae480a80e1c9aa90c927e9",
+          "matches_source": true
+        }
+      ],
+      "source_bytes": 1048576,
+      "progress_observations": {
+        "count": 64,
+        "first_bytes": 15493,
+        "max_bytes": 1047685,
+        "last_bytes": 1047685,
+        "backward_jumps": 0
+      },
+      "completed_successfully": true
+    },
+    {
+      "action": "upload",
+      "name": "throughput-64MiB.bin",
+      "elapsed_s": 80.298,
+      "exit_code": 130,
+      "interrupted": false,
+      "timed_out": false,
+      "log_path": "1793546365971236200-upload.jsonl",
+      "results": [],
+      "items": [],
+      "source_bytes": 67108864,
+      "progress_observations": {
+        "count": 374,
+        "first_bytes": 65536,
+        "max_bytes": 8257536,
+        "last_bytes": 8126464,
+        "backward_jumps": 115
+      },
+      "completed_successfully": false
+    },
+    {
+      "action": "upload-list",
+      "name": "smoke-1MiB.bin",
+      "elapsed_s": 0.622,
+      "exit_code": 0,
+      "interrupted": false,
+      "timed_out": false,
+      "log_path": "1793546449316244180-upload-list.jsonl",
+      "results": [
+        {
+          "code": 0,
+          "msg": "成功",
+          "data": {
+            "totalCount": 2
+          },
+          "action": "upload-list",
+          "type": "result"
+        }
+      ],
+      "items": [
+        {
+          "code": 0,
+          "msg": "",
+          "data": {
+            "recordId": "105b8b02-8ac5-4360-bc19-1a9a7119efd1",
+            "fileName": "smoke-1MiB.bin",
+            "fileSize": 1048576,
+            "state": "success",
+            "createdAt": 1793546354122
+          },
+          "action": "upload-list",
+          "type": "list"
+        },
+        {
+          "code": 0,
+          "msg": "",
+          "data": {
+            "recordId": "c031967b-2fe4-4d8f-aacb-9be3cd9d033b",
+            "fileName": "throughput-64MiB.bin",
+            "fileSize": 67108864,
+            "state": "pending",
+            "createdAt": 1793546366124
+          },
+          "action": "upload-list",
+          "type": "list"
+        }
+      ],
+      "source_bytes": 1048576,
+      "progress_observations": {
+        "count": 0,
+        "first_bytes": null,
+        "max_bytes": null,
+        "last_bytes": null,
+        "backward_jumps": 0
+      },
+      "completed_successfully": true
+    },
+    {
+      "action": "upload-resume",
+      "name": "throughput-64MiB.bin",
+      "elapsed_s": 182.173,
+      "exit_code": 130,
+      "interrupted": false,
+      "timed_out": true,
+      "log_path": "1793546455589848939-upload-resume.jsonl",
+      "results": [],
+      "items": [],
+      "source_bytes": 67108864,
+      "progress_observations": {
+        "count": 875,
+        "first_bytes": 65536,
+        "max_bytes": 41484288,
+        "last_bytes": 41287680,
+        "backward_jumps": 227
+      },
+      "completed_successfully": false
+    },
+    {
+      "action": "upload-resume",
+      "name": "throughput-64MiB.bin",
+      "elapsed_s": 217.792,
+      "exit_code": 0,
+      "interrupted": false,
+      "timed_out": false,
+      "log_path": "1793546642030261813-upload-resume.jsonl",
+      "results": [
+        {
+          "code": 0,
+          "msg": "成功",
+          "data": {
+            "recordId": "c031967b-2fe4-4d8f-aacb-9be3cd9d033b",
+            "fileName": "throughput-64MiB.bin"
+          },
+          "action": "upload-resume",
+          "type": "result"
+        }
+      ],
+      "items": [
+        {
+          "code": 0,
+          "msg": "上传成功",
+          "data": {
+            "recordId": "c031967b-2fe4-4d8f-aacb-9be3cd9d033b",
+            "fileId": "40d25fb49645452aa01723a71e6f607d",
+            "fileName": "throughput-64MiB.bin",
+            "fileSize": 67108864,
+            "instantUpload": false
+          },
+          "action": "upload-resume",
+          "type": "list"
+        }
+      ],
+      "source_bytes": 67108864,
+      "progress_observations": {
+        "count": 1040,
+        "first_bytes": 65536,
+        "max_bytes": 67108864,
+        "last_bytes": 67108864,
+        "backward_jumps": 308
+      },
+      "completed_successfully": true
+    },
+    {
+      "action": "download",
+      "name": "throughput-64MiB.bin",
+      "elapsed_s": 0.552,
+      "exit_code": 1,
+      "interrupted": false,
+      "timed_out": false,
+      "log_path": "1793546862616974475-download.jsonl",
+      "results": [
+        {
+          "code": 23018,
+          "msg": "download file size limit[52428800]",
+          "action": "download",
+          "type": "result",
+          "data": {}
+        }
+      ],
+      "items": [],
+      "download_checks": [],
+      "source_bytes": 67108864,
+      "progress_observations": {
+        "count": 0,
+        "first_bytes": null,
+        "max_bytes": null,
+        "last_bytes": null,
+        "backward_jumps": 0
+      },
+      "completed_successfully": false
+    },
+    {
+      "action": "upload",
+      "name": "resume-8MiB.bin",
+      "elapsed_s": 24.965,
+      "exit_code": 0,
+      "interrupted": false,
+      "timed_out": false,
+      "log_path": "1793546873126157971-upload.jsonl",
+      "results": [
+        {
+          "code": 0,
+          "msg": "成功",
+          "data": {
+            "fileNames": [
+              "resume-8MiB.bin"
+            ],
+            "fileCount": 1,
+            "totalSize": 8388608,
+            "fids": [
+              "f10678ab371d49dbb1bf395d75304949"
+            ],
+            "successCount": 1,
+            "instantUpload": false,
+            "instantUploadCount": 0,
+            "fullPath": "夸克网盘/来自：Codex",
+            "heapUsed": 9933864,
+            "rss": 83673088
+          },
+          "action": "upload",
+          "type": "result"
+        }
+      ],
+      "items": [
+        {
+          "code": 0,
+          "msg": "上传成功",
+          "data": {
+            "recordId": "abee78ad-877c-42bc-b048-226d7c684b56",
+            "fileId": "f10678ab371d49dbb1bf395d75304949",
+            "fileName": "resume-8MiB.bin",
+            "fileSize": 8388608,
+            "instantUpload": false
+          },
+          "action": "upload",
+          "type": "list"
+        }
+      ],
+      "source_bytes": 8388608,
+      "progress_observations": {
+        "count": 128,
+        "first_bytes": 65536,
+        "max_bytes": 8388608,
+        "last_bytes": 8388608,
+        "backward_jumps": 0
+      },
+      "completed_successfully": true
+    },
+    {
+      "action": "download",
+      "name": "resume-8MiB.bin",
+      "elapsed_s": 3.325,
+      "exit_code": 130,
+      "interrupted": true,
+      "timed_out": false,
+      "log_path": "1793546901850794042-download.jsonl",
+      "results": [],
+      "items": [],
+      "download_checks": [],
+      "source_bytes": 8388608,
+      "progress_observations": {
+        "count": 80,
+        "first_bytes": 15433,
+        "max_bytes": 6600846,
+        "last_bytes": 6600846,
+        "backward_jumps": 0
+      },
+      "completed_successfully": false
+    },
+    {
+      "action": "download-list",
+      "name": "smoke-1MiB.bin",
+      "elapsed_s": 0.423,
+      "exit_code": 0,
+      "interrupted": false,
+      "timed_out": false,
+      "log_path": "1793546907706350189-download-list.jsonl",
+      "results": [
+        {
+          "code": 0,
+          "msg": "成功",
+          "data": {
+            "totalCount": 1
+          },
+          "action": "download-list",
+          "type": "result"
+        }
+      ],
+      "items": [
+        {
+          "code": 0,
+          "msg": "",
+          "data": {
+            "recordId": "915c3a9f-87be-4641-830a-632447d20636",
+            "fileName": "resume-8MiB.bin",
+            "fileSize": 8388608,
+            "state": "paused",
+            "downloadedSize": 0
+          },
+          "action": "download-list",
+          "type": "list"
+        }
+      ],
+      "source_bytes": 1048576,
+      "progress_observations": {
+        "count": 0,
+        "first_bytes": null,
+        "max_bytes": null,
+        "last_bytes": null,
+        "backward_jumps": 0
+      },
+      "completed_successfully": true
+    },
+    {
+      "action": "download-resume",
+      "name": "resume-8MiB.bin",
+      "elapsed_s": 4.508,
+      "exit_code": 0,
+      "interrupted": false,
+      "timed_out": false,
+      "log_path": "1793546914054940238-download-resume.jsonl",
+      "results": [
+        {
+          "code": 0,
+          "msg": "成功",
+          "data": {
+            "recordId": "915c3a9f-87be-4641-830a-632447d20636",
+            "fileName": "resume-8MiB.bin",
+            "filePath": "/tmp/quark-storage-test/20261101T110722Z/downloads/resume-8MiB.bin/resume-8MiB.bin"
+          },
+          "action": "download-resume",
+          "type": "result"
+        }
+      ],
+      "items": [],
+      "download_checks": [
+        {
+          "path": "/tmp/quark-storage-test/20261101T110722Z/downloads/resume-8MiB.bin/resume-8MiB.bin",
+          "bytes": 8388608,
+          "sha256": "118347ce13982a6a81165fe76298d1182ee468199fd2758ab789daea3dc28b7f",
+          "matches_source": true
+        }
+      ],
+      "source_bytes": 8388608,
+      "progress_observations": {
+        "count": 101,
+        "first_bytes": 15431,
+        "max_bytes": 8354893,
+        "last_bytes": 8354893,
+        "backward_jumps": 0
+      },
+      "completed_successfully": true
+    }
+  ],
+  "controlled_upload_interrupt": {
+    "event": "controlled_upload_interrupt",
+    "file": "throughput-64MiB.bin",
+    "matched_processes": 1,
+    "time_ns": 1793546444259893373
+  },
+  "interpretation": {
+    "data_integrity": "See download_checks.matches_source; partial downloads are expected to fail this comparison.",
+    "upload_resume_efficiency": "Not established: resumed progress starts near zero, and progress counters are non-monotonic. Successful final recovery does not establish byte-level resume efficiency.",
+    "timing": "Command wall time includes SDK initialization, hashing, network, retries and finalization. It is not raw network throughput.",
+    "large_file_test": "1 GiB fixture generated but not uploaded; multi-GB checkpoints and cross-instance recovery not validated.",
+    "storage_location": "Cloud test files are under the CLI default folder 来自：Codex; test files retained."
+  },
+  "status": "completed_with_account_download_limit",
+  "findings": {
+    "account_tier": "普通用户，10 GiB 配额",
+    "smoke_1MiB": {
+      "upload_s": 4.092,
+      "download_s": 1.571,
+      "sha256_match": true
+    },
+    "file_8MiB": {
+      "upload_s": 24.965,
+      "download_interrupted_after_reported_bytes": 1063054,
+      "persisted_downloaded_bytes_after_interrupt": 0,
+      "interrupted_download_s": 3.325,
+      "download_resume_s": 4.508,
+      "sha256_match": true
+    },
+    "file_64MiB": {
+      "initial_upload_interrupted_s": 80.298,
+      "first_resume_timeout_s": 182.173,
+      "second_resume_completed_s": 217.792,
+      "total_upload_command_s": 480.263,
+      "uploaded_with_instant_deduplication": false,
+      "download_error_code": 23018,
+      "download_error_message": "download file size limit[52428800]",
+      "reported_download_limit_bytes": 52428800,
+      "sha256_match": null
+    },
+    "conclusion": "Small-file round trips succeed. The current account cannot retrieve a 64 MiB file through this CLI. Paid-tier limits and byte-efficient resumption remain unverified."
+  }
+}

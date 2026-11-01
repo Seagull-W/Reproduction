@@ -1,0 +1,23 @@
+# Local credentials and tool state; never commit authorization caches.
+.quarkclouddrive/
+.aws/
+.env
+.env.*
+!.env.example
+
+# Runtime workspaces. Promote selected small evidence into experiments/ or evidence/.
+**/runs/
+**/models/
+**/checkpoints/
+**/downloads/
+**/.cache/
+**/.venv/
+**/__pycache__/
+*.pyc
+
+# Model/training state. JSON metadata and weight indexes remain trackable.
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin

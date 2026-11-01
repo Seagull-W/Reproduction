@@ -1,0 +1,72 @@
+{
+  "schema_version": "reproduction.artifacts.v1",
+  "template_only": true,
+  "instructions": "示例记录均未产生文件。使用时替换示例并设 template_only=false；目录提供逐文件大小与 SHA-256 清单。将 replica_entry_template 的实际记录加入 replicas 后删除辅助模板。未校验副本不能标 verified，缺失值说明原因。",
+  "run_id": "REPLACE_WITH_UNIQUE_RUN_ID",
+  "updated_at_utc": null,
+  "artifacts": [
+    {
+      "artifact_id": "raw-evidence-example",
+      "role": "raw_evidence",
+      "attempt_id": "attempt-001",
+      "step_or_episode_range": null,
+      "state": "planned",
+      "path": null,
+      "format_and_compression": null,
+      "bytes": null,
+      "sha256": null,
+      "record_count": null,
+      "dependencies": [],
+      "retention_class": "research_evidence",
+      "pinned": true,
+      "replicas": [],
+      "requires_external_copy_before_release": true,
+      "decision": "retain",
+      "decision_reason": "研究与结论使用期间保留原始证据",
+      "review_due_at_utc": null,
+      "deletion_record": null
+    },
+    {
+      "artifact_id": "checkpoint-example",
+      "role": "training_resume_checkpoint",
+      "attempt_id": "attempt-001",
+      "step_or_episode_range": null,
+      "state": "planned",
+      "path": null,
+      "file_manifest_artifact_id": null,
+      "bytes": null,
+      "sha256": null,
+      "dependencies": [],
+      "retention_class": "rolling_checkpoint",
+      "pinned": false,
+      "replicas": [],
+      "requires_external_copy_before_release": false,
+      "decision": "retain_during_active_run",
+      "decision_reason": "实例内恢复使用，阶段复盘再决定是否归档",
+      "restore_verification": {
+        "status": "not_tested",
+        "checked_at_utc": null,
+        "evidence_artifact_id": null,
+        "limitations": []
+      },
+      "review_due_at_utc": null,
+      "deletion_record": null
+    }
+  ],
+  "replica_entry_template": {
+    "location_kind": null,
+    "stable_location_without_credentials": null,
+    "outside_compute_instance": null,
+    "state": "planned",
+    "verification_method": null,
+    "verification_scope": null,
+    "verified_at_utc": null,
+    "verified_bytes": null,
+    "verified_sha256": null,
+    "last_error": null,
+    "resource_expiry_or_reclaim_due_at_utc": null,
+    "next_check_at_utc": null,
+    "responsible_owner_or_job": null
+  },
+  "missing_fields": []
+}
