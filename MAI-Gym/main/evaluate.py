@@ -1,8 +1,8 @@
-import pathlib as Path
+from pathlib import Path
 import json
-from huggingface_hub import save_torch_state_dict
+
 import requests
-from sqlalchemy import exists
+
 
 from agent import (
     make_observation_message,
@@ -31,7 +31,7 @@ def run_episode(
     ):
         path=output_dir/name
         path.write_text(
-            json.dumps(value,ensure_ascii=False,intent=2),
+            json.dumps(value,ensure_ascii=False,indent=2),
             encoding="utf-8",
         )
 
