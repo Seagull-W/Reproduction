@@ -1,0 +1,5 @@
+# Install alongside the pinned OSWorld and vLLM environments; no torch override.
+requests>=2.31,<3
+psutil>=5.9.6,<8
+nvidia-ml-py>=12,<14
+matplotlib>=3.7.4,<4

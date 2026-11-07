@@ -1,0 +1,23 @@
+test_controller_return_capture (test_evaluation.EvaluationTests.test_controller_return_capture) ... ok
+test_docker_shared_readonly_image (test_evaluation.EvaluationTests.test_docker_shared_readonly_image) ... ok
+test_manifest_and_workers (test_evaluation.EvaluationTests.test_manifest_and_workers) ... ok
+test_parse_and_truncation (test_evaluation.EvaluationTests.test_parse_and_truncation) ... ok
+test_summary_missing_and_plots (test_evaluation.EvaluationTests.test_summary_missing_and_plots) ... ok
+test_verifier (test_evaluation.EvaluationTests.test_verifier) ... ok
+test_windows_and_exact_reconstruction (test_evaluation.EvaluationTests.test_windows_and_exact_reconstruction) ... ok
+test_calibration (test_evaluation.ProcessTests.test_calibration) ... ok
+test_dry_run_starts_nothing (test_evaluation.ProcessTests.test_dry_run_starts_nothing) ... ok
+test_failure_is_not_zero_score (test_evaluation.ProcessTests.test_failure_is_not_zero_score) ... ok
+test_http_error_body (test_evaluation.ProcessTests.test_http_error_body) ... ok
+test_init_failure (test_evaluation.ProcessTests.test_init_failure) ... ok
+test_parent_interrupt_cleans_worker (test_evaluation.ProcessTests.test_parent_interrupt_cleans_worker) ... ok
+test_spawn_dynamic_trials (test_evaluation.ProcessTests.test_spawn_dynamic_trials) ... ok
+test_timeout (test_evaluation.ProcessTests.test_timeout) ... ok
+test_gpu_plots_and_copy_verification (test_telemetry.TelemetryTests.test_gpu_plots_and_copy_verification) ... ok
+test_no_driver_collection_and_prometheus (test_telemetry.TelemetryTests.test_no_driver_collection_and_prometheus) ... ok
+test_unsupported_is_null_with_reason (test_telemetry.TelemetryTests.test_unsupported_is_null_with_reason) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 13.005s
+
+OK

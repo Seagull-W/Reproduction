@@ -1,0 +1,22 @@
+{
+  "target_gpus": 2,
+  "nominal_memory_gb_per_gpu": 48,
+  "replicas": 2,
+  "tensor_parallel_size": 1,
+  "initial_workers_per_replica": 4,
+  "calibration_workers_per_replica": [
+    2,
+    4,
+    8
+  ],
+  "max_model_len": 32768,
+  "max_num_seqs": 8,
+  "max_num_batched_tokens": 8192,
+  "gpu_memory_utilization": 0.9,
+  "window_size": 10,
+  "overlap_steps": 2,
+  "history": "full text; old images replaced with placeholders",
+  "model_revision": "176656ae6a034a0ebf57e8fa67e73015b6e2d98a",
+  "status": "initial unmeasured tuning profile, not a verified throughput optimum",
+  "gating": "Verify GPU-mode CPU/RAM, disk capacity, and independent OSWorld desktops before running."
+}

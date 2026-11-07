@@ -1,0 +1,42 @@
+[
+  {
+    "endpoint": "http://127.0.0.1:8000/v1",
+    "gpu_index": 0,
+    "path_to_vm": "REPLACE_WITH_INDEPENDENT_DESKTOP_0"
+  },
+  {
+    "endpoint": "http://127.0.0.1:8000/v1",
+    "gpu_index": 0,
+    "path_to_vm": "REPLACE_WITH_INDEPENDENT_DESKTOP_1"
+  },
+  {
+    "endpoint": "http://127.0.0.1:8000/v1",
+    "gpu_index": 0,
+    "path_to_vm": "REPLACE_WITH_INDEPENDENT_DESKTOP_2"
+  },
+  {
+    "endpoint": "http://127.0.0.1:8000/v1",
+    "gpu_index": 0,
+    "path_to_vm": "REPLACE_WITH_INDEPENDENT_DESKTOP_3"
+  },
+  {
+    "endpoint": "http://127.0.0.1:8001/v1",
+    "gpu_index": 1,
+    "path_to_vm": "REPLACE_WITH_INDEPENDENT_DESKTOP_4"
+  },
+  {
+    "endpoint": "http://127.0.0.1:8001/v1",
+    "gpu_index": 1,
+    "path_to_vm": "REPLACE_WITH_INDEPENDENT_DESKTOP_5"
+  },
+  {
+    "endpoint": "http://127.0.0.1:8001/v1",
+    "gpu_index": 1,
+    "path_to_vm": "REPLACE_WITH_INDEPENDENT_DESKTOP_6"
+  },
+  {
+    "endpoint": "http://127.0.0.1:8001/v1",
+    "gpu_index": 1,
+    "path_to_vm": "REPLACE_WITH_INDEPENDENT_DESKTOP_7"
+  }
+]

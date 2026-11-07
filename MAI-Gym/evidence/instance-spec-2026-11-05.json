@@ -1,0 +1,32 @@
+{
+  "queried_date": "2026-11-05",
+  "source": "compshare --json instance list --all / instance show --status --spec --disks --image",
+  "instance_id": "cpod-1x2b7fhaphm7",
+  "state": "Stopped",
+  "instance_type": "Container",
+  "platform_gpu_label": "4090_48G",
+  "api_current_gpu_count": 0,
+  "api_current_cpu": 2,
+  "api_current_memory_mib": 4096,
+  "boot_disk_gib": 50,
+  "image_name": "cuda132_torch2130_py312",
+  "region": "cn-sh2",
+  "zone": "cn-sh2-03",
+  "user_confirmed_gpu_mode": {
+    "gpu_count": 2,
+    "nominal_memory_gb_per_gpu": 48
+  },
+  "unverified": [
+    "actual GPU names and device-visible memory",
+    "GPU-mode CPU/RAM",
+    "KVM and nested virtualization",
+    "PCIe topology",
+    "NVML/DCGM/profiler permissions"
+  ],
+  "lifecycle_actions_taken": [],
+  "api_stop_time_utc": "2026-11-02T16:20:21+00:00",
+  "api_release_time_utc": "2026-11-09T16:20:21+00:00",
+  "note": "Read-only query. Current stopped/no-GPU API allocation does not verify GPU-mode resources.",
+  "rechecked_date": "2026-11-06",
+  "rechecked_state": "Stopped"
+}
