@@ -15,5 +15,5 @@
 ## 项目
 
 - [MAI-Gym](MAI-Gym/README.md)：使用已有后训练模型进行基准评测，重点保存逐步轨迹和评测证据。
-- [GRPO 与验证器可靠性](grpo-verifier-reliability/README.md)：从 CPU 教学实验到真实训练对照，重点保存奖励、输出与独立评测之间的联系。
+- [GRPO 与验证器可靠性](grpo-verifier-reliability/)：旧版已清空，正在由用户逐步编写 GPU 完整训练与评测流程。
 - [夸克 CLI 存储测试](storage-tests/quark/2026-11-01/report.json)：当前机器、普通账号下的传输实测；结果不代表其他账号、地域或会员等级。
